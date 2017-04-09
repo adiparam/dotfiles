@@ -79,3 +79,5 @@ if [ -f $HOME/google-cloud-sdk/path.bash.inc ]; then
   source $HOME/google-cloud-sdk/path.bash.inc
   source $HOME/google-cloud-sdk/completion.bash.inc
 fi
+
+export TERMINAL=gnome-terminal

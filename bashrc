@@ -86,6 +86,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Add android studio path
+if [ -d '/home/aditya/Android/Sdk/platform-tools' ]; then
+  export PATH=/home/aditya/Android/Sdk/platform-tools:$PATH
+fi
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/aditya/google-cloud-sdk/path.bash.inc' ]; then . '/home/aditya/google-cloud-sdk/path.bash.inc'; fi
 

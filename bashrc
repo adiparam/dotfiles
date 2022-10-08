@@ -87,14 +87,14 @@ if ! shopt -oq posix; then
 fi
 
 # Add android studio path
-if [ -d '/home/aditya/Android/Sdk/platform-tools' ]; then
-  export PATH=/home/aditya/Android/Sdk/platform-tools:$PATH
+if [ -d '$HOME/Android/Sdk/platform-tools' ]; then
+  export PATH=$HOME/Android/Sdk/platform-tools:$PATH
 fi
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/aditya/google-cloud-sdk/path.bash.inc' ]; then . '/home/aditya/google-cloud-sdk/path.bash.inc'; fi
+if [ -f '$HOME/google-cloud-sdk/path.bash.inc' ]; then . '$HOME/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/aditya/google-cloud-sdk/completion.bash.inc' ]; then . '/home/aditya/google-cloud-sdk/completion.bash.inc'; fi
+if [ -f '$HOME/google-cloud-sdk/completion.bash.inc' ]; then . '$HOME/google-cloud-sdk/completion.bash.inc'; fi
 
 export TERMINAL=gnome-terminal

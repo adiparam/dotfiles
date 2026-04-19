@@ -91,10 +91,18 @@ if [ -d '$HOME/Android/Sdk/platform-tools' ]; then
   export PATH=$HOME/Android/Sdk/platform-tools:$PATH
 fi
 
+export TERMINAL=gnome-terminal
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH=/usr/local/go/bin:$PATH
+
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/google-cloud-sdk/path.bash.inc' ]; then . '$HOME/google-cloud-sdk/path.bash.inc'; fi
+if [ -f '/home/aditya/google-cloud-sdk/path.bash.inc' ]; then . '/home/aditya/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '$HOME/google-cloud-sdk/completion.bash.inc' ]; then . '$HOME/google-cloud-sdk/completion.bash.inc'; fi
-
-export TERMINAL=gnome-terminal
+if [ -f '/home/aditya/google-cloud-sdk/completion.bash.inc' ]; then . '/home/aditya/google-cloud-sdk/completion.bash.inc'; fi
